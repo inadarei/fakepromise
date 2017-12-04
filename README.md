@@ -22,7 +22,7 @@ const myResult = await fakepromise.promise(2000, "this is returned");
 
 Ye Olde promises:
 
-```
+```javascript
 const fakepromise = require('fakepromise');
 fakepromise.promise(2000, "this is returned").then( msg => {
   console.log(msg);
