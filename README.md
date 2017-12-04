@@ -1,6 +1,7 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![Code Climate Badge][codeclimate-img]][codeclimate-url]
+[![Test Coverage][coverage-img]][codeverage-url]
 
 ## What Is it?
 
@@ -51,3 +52,5 @@ introduce some fun randomness by delaying "up to" the number of milliseconds.
 [npm-url]: https://www.npmjs.com/package/fakepromise
 [codeclimate-img]: https://codeclimate.com/github/inadarei/fakepromise/badges/gpa.svg
 [codeclimate-url]: https://codeclimate.com/github/inadarei/fakepromise
+[coverage-img]: https://api.codeclimate.com/v1/badges/cb7dfc4827bac808b77b/test_coverage
+[coverage-url]: https://codeclimate.com/github/inadarei/fakepromise/test_coverage
