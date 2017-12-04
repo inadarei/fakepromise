@@ -1,6 +1,6 @@
 {
   "name": "fakepromise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "On-demand fake promise that can take arbitrary time and return predefined result",
   "main": "fakepromise.js",
   "scripts": {

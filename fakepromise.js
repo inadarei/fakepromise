@@ -1,4 +1,4 @@
-let exports = module.exports;
+exports = module.exports;
 
 exports.promise = function (delayUpTo, passValue = "") {
   const delay = Math.random() * delayUpTo; 

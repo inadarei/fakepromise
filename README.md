@@ -13,7 +13,18 @@ predictable output – Fake Promise does exactly that.
 
 ## Usage:
 
+Async/Await:
+
 ```javascript
 const fakepromise = require('fakepromise');
 const myResult = await fakepromise.promise(2000, "this is returned");
+```
+
+Ye Olde promises:
+
+```
+const fakepromise = require('fakepromise');
+fakepromise.promise(2000, "this is returned").then( msg => {
+  console.log(msg);
+});
 ```
