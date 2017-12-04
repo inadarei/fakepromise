@@ -1,7 +1,7 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![Code Climate Badge][codeclimate-img]][codeclimate-url]
-[![Test Coverage][coverage-img]][codeverage-url]
+[![Test Coverage][coverage-img][coverage-url]
 
 ## What Is it?
 
