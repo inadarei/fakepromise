@@ -28,3 +28,9 @@ fakepromise.promise(2000, "this is returned").then( msg => {
   console.log(msg);
 });
 ```
+
+## Alternatives
+
+If you are already using Bluebird, the `Bluebird.delay()` is almost identical,
+except it delays by the exact milliseconds where we introduce some fun
+randomness by delaying "up to" the number of milliseconds. 

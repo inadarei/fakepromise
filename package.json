@@ -1,6 +1,6 @@
 {
   "name": "fakepromise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On-demand fake promise that can take arbitrary time and return predefined result",
   "main": "src/fakepromise.js",
   "repository": {
