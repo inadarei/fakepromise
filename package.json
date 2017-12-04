@@ -25,6 +25,7 @@
   "scripts": {
     "lint": "eslint src test",
     "test": "npm run lint && nyc --check-coverage ava test/**/*.js --verbose",
+    "test:watch": "ava test/**/*.js --verbose --watch",
     "test-cov": "nyc report test/"
   },
   "nyc": {
