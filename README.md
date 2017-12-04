@@ -20,7 +20,10 @@ const fakepromise = require('fakepromise');
 const myResult = await fakepromise.promise(2000, "this is returned");
 ```
 
-Ye Olde promises:
+will give you a promise that takes *up to* 2000 milliseconds to execute and
+resolves with "this is returned".
+
+Ye olde promises-way:
 
 ```javascript
 const fakepromise = require('fakepromise');
@@ -31,6 +34,7 @@ fakepromise.promise(2000, "this is returned").then( msg => {
 
 ## Alternatives
 
-If you are already using Bluebird, the `Bluebird.delay()` is almost identical,
-except it delays by the exact milliseconds where we introduce some fun
-randomness by delaying "up to" the number of milliseconds. 
+If you are already using Bluebird, the
+[Promise.delay()](http://bluebirdjs.com/docs/api/promise.delay.html) is almost
+identical, except it delays by the exact number of milliseconds where we
+introduce some fun randomness by delaying "up to" the number of milliseconds. 
