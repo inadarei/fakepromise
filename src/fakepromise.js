@@ -7,4 +7,4 @@ exports.promise = function (delayUpTo, passValue = "") {
       resolve(passValueArg);
     }, delay, passValue);
   });
-}
+};

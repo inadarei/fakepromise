@@ -1,11 +1,8 @@
 {
   "name": "fakepromise",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "On-demand fake promise that can take arbitrary time and return predefined result",
-  "main": "fakepromise.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/fakepromise.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inadarei/fakepromise.git"
@@ -19,5 +16,32 @@
   "bugs": {
     "url": "https://github.com/inadarei/fakepromise/issues"
   },
-  "homepage": "https://github.com/inadarei/fakepromise#readme"
+  "homepage": "https://github.com/inadarei/fakepromise#readme",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "eslint": "^4.12.1",
+    "nyc": "^11.3.0"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "npm run lint && nyc --check-coverage ava test/**/*.js --verbose",
+    "test-cov": "nyc report test/"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": [75, 95],
+    "statements": [75, 95],
+    "functions": [75, 95],
+    "branches": [75, 95],
+    "include": [
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true,
+    "report-dir": "./coverage"
+  }
 }
