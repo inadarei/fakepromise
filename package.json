@@ -1,0 +1,23 @@
+{
+  "name": "fakepromise",
+  "version": "1.0.0",
+  "description": "On-demand fake promise that can take arbitrary time and return predefined result",
+  "main": "fakepromise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inadarei/fakepromise.git"
+  },
+  "keywords": [
+    "promise",
+    "test"
+  ],
+  "author": "Irakli Nadareishvili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inadarei/fakepromise/issues"
+  },
+  "homepage": "https://github.com/inadarei/fakepromise#readme"
+}
