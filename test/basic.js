@@ -1,4 +1,5 @@
-import test from "ava";
+//import test from "ava";
+const test = require("ava");
 
 const fakepromise = require("../src/fakepromise");
 
