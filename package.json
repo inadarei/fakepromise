@@ -40,7 +40,7 @@
     ],
     "reporter": [
       "text-summary",
-      "text",
+      "lcov",
       "html"
     ],
     "all": true,
