@@ -8,13 +8,14 @@
 How many times have you been testing something that involves a promise, but you
 wanted a fake promise, because the important thing is the async workflow, not
 what the promise does? Have you hastily coded something-up with a setTimeout?
-Are you annouted about having to waste time on doing that repeatedly? Be annoyed
-no more. Solution is here. 
+Are you annoyed with having to waste time on doing that repeatedly? Be annoyed
+no more! Ultimate solution is here! And it has 100% test coverage, so it's very
+reliable :)
 
 ## TL;DR
 
 If you need a fake promise that resolves in up to N milliseconds and returns a
-predictable output – Fake Promise does exactly that.
+predictable output – Fake Promise does exactly that. 
 
 ## Usage:
 
@@ -32,7 +33,8 @@ Ye olde promises-way:
 
 ```javascript
 const fakepromise = require('fakepromise');
-fakepromise.promise(2000, "this is returned").then( msg => {
+const user        = {"name" : "micky", role: "mouse"};
+fakepromise.promise(2000, user).then( msg => {
   console.log(msg);
 });
 ```
