@@ -1,0 +1,17 @@
+#!/bin/sh
+
+CC_TEST_REPORTER_ID="$CC_REPORTER_FAKEPROMISE"
+
+gitpath=`git rev-parse --git-dir`
+projectpath="$(dirname $gitpath)/"
+if test "$projectpath" = './'; then
+  projectpath="$(pwd)/"
+fi
+
+echo "project path: $projectpath"
+
+cd $projectpath
+./bin/test-reporter-latest-darwin-amd64 before-build
+npm install
+npm test
+./bin/test-reporter-latest-darwin-amd64 after-build -p coverage/ 
