@@ -8,8 +8,6 @@ if test "$projectpath" = './'; then
   projectpath="$(pwd)/"
 fi
 
-echo "project path: $projectpath"
-
 cd $projectpath
 ./bin/test-reporter-latest-darwin-amd64 before-build
 npm install
